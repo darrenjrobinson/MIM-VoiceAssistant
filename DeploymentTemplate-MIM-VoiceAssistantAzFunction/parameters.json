@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "serverfarms_WestUS2Plan_name": {
+            "value": null
+        },
+        "sites_MIM_VoiceAssistantAzFunction_name": {
+            "value": null
+        },
+        "storageAccounts_mimvoiceassistantazfunc_name": {
+            "value": null
+        },
+        "config_web_name": {
+            "value": null
+        },
+        "hostNameBindings_mim_voiceassistantazfunction.azurewebsites.net_name": {
+            "value": null
+        }
+    }
+}

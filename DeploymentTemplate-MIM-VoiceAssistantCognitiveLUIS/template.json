@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "accounts_LUIS_name": {
+            "defaultValue": "LUIS",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/34aa4b26-2e2b-4e2b-a3b3-09051cb999fd/resourceGroups/CognitiveLUIS/providers/Microsoft.CognitiveServices/accounts/LUIS'.",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "LUIS",
+            "name": "[parameters('accounts_LUIS_name')]",
+            "apiVersion": "2016-02-01-preview",
+            "location": "WestUS2",
+            "scale": null,
+            "properties": {},
+            "dependsOn": []
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_identitysearch_name": {
+            "value": null
+        },
+        "serverfarms_WestUS2Plan_name": {
+            "value": null
+        },
+        "storageAccounts_identitybot_name": {
+            "value": null
+        },
+        "config_web_name": {
+            "value": null
+        },
+        "namespaces_MIMVoiceEventHub_name": {
+            "value": null
+        },
+        "components_IdentitySearch5asjjo_name": {
+            "value": null
+        },
+        "eventhubs_mimvoice_name": {
+            "value": null
+        },
+        "hostNameBindings_identitysearch.azurewebsites.net_name": {
+            "value": null
+        },
+        "consumergroups_$Default_name": {
+            "value": null
+        },
+        "AuthorizationRules_RootManageSharedAccessKey_name": {
+            "value": null
+        }
+    }
+}
