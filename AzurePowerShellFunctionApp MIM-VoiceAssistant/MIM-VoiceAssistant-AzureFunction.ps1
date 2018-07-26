@@ -6,7 +6,8 @@ $query = $requestBody.query
 $staging = $requestBody.staging
 # Flag to send constructed query to MIM or Not
 $queryMIM = $false
-
+# Output Array
+$arrOutput = @{}
 
 if ($query -and $staging){
     # LUIS
@@ -59,12 +60,18 @@ if ($query -and $staging){
             }
         }
         $queryResponse = $true
+
+        # Output Entitlement
+        $arrOutput.add("entitlement",$entitlement)
     }
 
    if ($queryResponse) {
         if ($firstname -and $lastname){
             $fullname = $firstname + " " + $lastname
             "Fullname: $($fullname)"
+
+            # Output Fullname
+            $arrOutput.add("fullname",$fullname)
         }
 
         if ($entitlement -and $fullname){
@@ -147,5 +154,8 @@ else {
     $entitlement
 }
 
-$speechText
-Out-File -Encoding Ascii -FilePath $res -inputObject $speechText
+# Result
+$arrOutput.add("MIMResponse",$speechText)
+$arrOutput = $arrOutput | convertTo-Json
+Out-File -Encoding Ascii -FilePath $res -inputObject $arrOutput
+
