@@ -62,12 +62,13 @@ def task(quit_event):
                         data = data[:-5]      
                         data = data[1:]                  
                         print('MIM Returned: ' + data)
+                        returnedResults = json.loads(data)
 
                         # -----------------------------
                         # Convert Repsonse to Speech
                         # -----------------------------
                         if data:
-                            mimResponse = data 
+                            mimResponse = returnedResults['MIMResponse']
                             tokenurl = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"
                             ttskey = 'yourAzureTextToSpeechAPIKey'
                             params = ""
@@ -125,6 +126,8 @@ def task(quit_event):
                             logparams['messageString'] = "MIMVoice-to-Cloud-" +str(datetimenow)
                             logparams['MIMQuery'] = str(text)
                             logparams['MIMResponse'] = mimResponse
+                            logparams['entity'] = returnedResults['fullname']
+                            logparams['entitlement'] = returnedResults['entitlement']
 
                             logheaders = {}
                             logheaders['Authorization'] = SASToken
