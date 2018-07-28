@@ -128,6 +128,7 @@ def task(quit_event):
                             logparams['MIMResponse'] = mimResponse
                             logparams['entity'] = returnedResults['fullname']
                             logparams['entitlement'] = returnedResults['entitlement']
+                            logparams['date'] = strftime("%m-%d-%Y", gmtime())
 
                             logheaders = {}
                             logheaders['Authorization'] = SASToken
