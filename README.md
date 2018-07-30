@@ -6,4 +6,4 @@ The Voice Assistant for Microsoft Identity Manager is an Azure IoT Business Solu
 See the Wiki for details on how to build the solution
 https://github.com/darrenjrobinson/MIM-VoiceAssistant/wiki/Build-the-Voice-Assistant-for-Microsoft-Identity-Manager 
 
-For a more detailed overview look here https://devpost.com/software/voice-assistant-for-microsoft-identity-manager 
+For a presentation of the solution look here https://gitpitch.com/darrenjrobinson/MIM-VoiceAssistant/presentation and for additional background and how it was built look here https://devpost.com/software/voice-assistant-for-microsoft-identity-manager 
