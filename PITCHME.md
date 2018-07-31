@@ -174,7 +174,6 @@ What if the Service Desk had a Voice Assistant to query Micrsoft Identity Manage
 @size[0.55em](@color[black](of the Voice Assistant))<br>
 @snapend  
 
-
 ---?color=#000000
 @title[End]
 ### More information
