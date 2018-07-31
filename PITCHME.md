@@ -165,13 +165,11 @@ What if the Service Desk had a Voice Assistant to query Micrsoft Identity Manage
 @snapend  
 
 
-
 ---?image=assets/images/Dashboard.png&position=right&size=65% 65%&color=#ffffff
 @title[Dashboard]
-@transition[none]
 @snap[west]
 @size[0.55em](@color[black](Analytics from the use))<br>
-@size[0.55em](@color[black](of the Voice Assistant))<br>
+@size[0.55em](@color[black](of the Voice Assistant))
 @snapend  
 
 ---?color=#000000
