@@ -21,7 +21,7 @@ layout : center-right
 # Transition setting options:
 # convex, concave, default, fade, none, slide, zoom
 #
-transition : slide
+transition : none
 
 logo : assets/images/logo.png
 theme-override : assets/css/PITCHME.css
